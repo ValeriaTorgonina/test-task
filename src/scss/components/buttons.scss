@@ -6,6 +6,11 @@
     font-weight: 500;
     font-size: 16px;
     border-radius: 6px;
+
+    &--dark {
+        background: none;
+        border: 2px solid $red;
+    }
 }
 
 .location-btn {

@@ -1,0 +1,29 @@
+.main-footer {
+    background: $black;
+    color: white;
+    border-top: 6px solid $red;
+    padding-bottom: 40px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    &__phones,
+    &__mail {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    &__link {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

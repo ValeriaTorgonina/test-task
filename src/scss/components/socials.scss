@@ -1,0 +1,21 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+
+    &__link {
+        display: block;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+    }
+}

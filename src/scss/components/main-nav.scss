@@ -42,4 +42,18 @@
     .button {
         margin-left: auto;
     }
+
+    &--dark {
+        box-shadow: none;
+        color: white;
+        padding: 30px 0;
+
+        .main-nav__logo:before {
+            opacity: 0.3;
+        }
+
+        .main-nav__link {
+            color: white;
+        }
+    }
 }
