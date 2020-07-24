@@ -1,4 +1,6 @@
 .main-header {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
     &__info {
         background-color: $black;
         padding: 5px 0;
@@ -30,5 +32,106 @@
         color: white;
         font-weight: 500;
         font-size: 14px;
+    }
+
+    &__logo-mobil {
+        display: none;
+    }
+
+    @media(max-width: 990px) {
+        position: relative;
+        padding-bottom: 50px;
+
+        &__phones-icon,
+        &__mail-icon {
+            margin-right: 8px;
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+
+        &__logo-mobil {
+            position: absolute;
+            left: 100px;
+            bottom: 2px;
+            display: block;
+            font-weight: 900;
+            font-size: 40px;
+            color: $red;
+            text-transform: uppercase;
+        }
+
+        .menu-button {
+            position: absolute;
+            bottom: 5px;
+            left: 40px;
+        }
+    }
+
+    @media(max-width: 670px) {
+        padding-bottom: 0;
+        &__info {
+            padding: 10px 0;
+            .container {
+                height: 55px;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+
+        &__logo-mobil {
+            bottom: 16px;
+            left: 80px;
+            font-size: 38px;
+        }
+
+        .menu-button {
+            bottom: 18px;
+            left: 20px;
+        }
+
+        .location-btn {
+            margin-right: 0;
+        }
+    }
+
+    @media(max-width: 480px) {
+        background: $black;
+        padding: 10px;
+
+        &__phones,
+        &__mail {
+            padding-left: 0;
+        }
+
+        &__phones {
+            margin-bottom: 10px;
+        }
+
+        &__logo-mobil {
+            position: static;
+            font-size: 30px;
+        }
+
+        &__info {
+            padding: 20px 0;
+
+            .container {
+                display: block;
+                height: auto;
+            }
+
+            .location-btn {
+                margin-bottom: 10px;
+            }
+        }
+
+        .menu-button {
+            bottom: 9px;
+            left: auto;
+            right: 20px;
+        }
     }
 }

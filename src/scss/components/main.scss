@@ -8,4 +8,15 @@
         justify-content: space-between;
         margin-bottom: 70px;
     }
+
+    @media(max-width: 990px) {
+        &__article {
+            margin-bottom: 40px;
+        }
+
+        &__cards-inner {
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+    }
 }

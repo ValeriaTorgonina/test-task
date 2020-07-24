@@ -57,3 +57,8 @@ pre {
     text-decoration: underline;
 }
 
+@media(max-width: 990px) {
+    .link {
+        font-size: 16px;
+    }
+}

@@ -11,6 +11,10 @@
         background: none;
         border: 2px solid $red;
     }
+
+    @media(max-width: 1250px) {
+        font-size: 14px;
+    }
 }
 
 .location-btn {
@@ -25,10 +29,51 @@
         height: 18px;
         margin-right: 10px;
     }
+
+    @media(max-width: 990px) {
+        font-size: 12px;
+
+        &__icon {
+            width: 10px;
+            height: 16px;
+            margin-right: 5px;
+        }
+    }
 }
 
 .menu-button {
     display: none;
+
+    @media(max-width: 990px) {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        transition: 0.3s;
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+            stroke: $black;
+            stroke-width: 2px;
+            stroke-linecap: round;
+    
+            &--cross {
+                display: none;
+            }
+        }
+    }
+
+    @media(max-width: 670px) { 
+        &__icon {
+            stroke: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    @media(max-width: 480px) {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .swiper-button-prev,
@@ -52,11 +97,25 @@
         height: 10px;
         background: $red;
         font-size: 0;
-        left: 42%;
+        left: 45%;
         transform: rotate(45deg) translate(-50%, -22%);
     }
     &:after {
         transform: rotate(-45deg) translate(-50%, 22%);
+    }
+
+    @media(max-width: 990px) {
+        width: 35px;
+        height: 35px;
+
+        &:before,
+        &:after {
+            left: 41%;
+        }
+    }
+
+    @media(max-width: 480px) {
+        margin-left: 0;
     }
 }
 
@@ -68,5 +127,12 @@
     }
     &:after {
         transform: rotate(-45deg) translate(-50%, -48%);
+    }
+
+    @media(max-width: 990px) {
+        &:before,
+        &:after {
+            left: 61%;
+        }
     }
 }

@@ -26,4 +26,35 @@
         font-weight: 500;
         font-size: 14px;
     }
+
+    @media(max-width: 990px) {
+        padding-bottom: 20px;
+
+        &__link {
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width: 670px) {
+        .container {
+            display: block;
+            text-align: center;
+        }
+        &__info-adress {
+            font-size: 12px;
+        }
+
+        &__phones,
+        &__mail {
+            justify-content: center;
+        }
+    }
+
+    @media(max-width: 480px) {
+        &__info-adress {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }

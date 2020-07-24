@@ -12,4 +12,25 @@
         width: 60%;
         margin-left: 50px;
     }
+
+    @media(max-width: 990px) {
+        height: calc(100vw / 2);
+        
+        .main-title {
+            width: 460px;
+        }
+    }
+
+    @media(max-width: 670px) {
+        .main-title {
+            width: 325px;
+            margin-left: 20px;
+        }
+    }
+
+    @media(max-width: 480px) { 
+        .main-title {
+            width: 260px;
+        }
+    }
 }

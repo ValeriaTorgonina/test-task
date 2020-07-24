@@ -1,7 +1,7 @@
 .card {
     position: relative;
     width: 32%;
-    min-height: 200px;
+    min-height: 210px;
     background: $beige;
     padding: 15px 20px;
 
@@ -36,5 +36,29 @@
 
     &__text {
         text-align: justify;
+        line-height: 18px;
+        padding-bottom: 40px;
+    }
+
+    @media(max-width: 990px) {
+        width: 48%;
+        margin-bottom: 3vw;
+
+        &:last-of-type {
+            margin: 0 auto;
+        }
+    }
+
+    @media(max-width: 670px) {
+        width: 100%;
+        min-height: 200px;
+
+        &__text {
+            padding-bottom: 20px;
+        }
+    }
+
+    @media(max-width: 670px) {
+        min-height: 210px;
     }
 }
