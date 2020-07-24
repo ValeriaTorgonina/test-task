@@ -1,0 +1,36 @@
+.main-header {
+    &__info {
+        background-color: $black;
+        padding: 5px 0;
+        color: white;
+        .container {
+            display: flex;
+        }
+    }
+
+    .location-btn {
+        margin-right: auto;
+    }
+
+    &__phones,
+    &__mail {
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    &__phones-icon,
+    &__mail-icon {
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+    }
+
+    &__link {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+
+}

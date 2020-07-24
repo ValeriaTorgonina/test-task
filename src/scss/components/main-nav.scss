@@ -1,0 +1,45 @@
+.main-nav {
+    padding: 15px 0;
+    box-shadow: 0 3px 5px 0 $lightgray;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        position: relative;
+        font-weight: 900;
+        font-size: 50px;
+        color: $red;
+        text-transform: uppercase;
+        padding-right: 30px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 36px;
+            right: 0;
+            top: 50%;
+            background: $lightgray;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        padding: 10px;
+        color: $black;
+    }
+
+    .button {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,27 @@
+.button {
+    padding: 10px 15px;
+    background: $red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.location-btn {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    &__icon {
+        width: 12px;
+        height: 18px;
+        margin-right: 10px;
+    }
+}
+
+.menu-button {
+    display: none;
+}
