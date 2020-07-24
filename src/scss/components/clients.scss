@@ -1,0 +1,42 @@
+.clients {
+    padding-bottom: 100px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+    }
+
+    .link {
+        margin-left: auto;
+    }
+
+    &__slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__card {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $lightgray;
+    }
+
+    &__card-image {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        object-fit: contain;
+    }
+}

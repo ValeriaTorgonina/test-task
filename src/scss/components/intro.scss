@@ -1,0 +1,15 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $lightgray url("../../assets/img/intro-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 35px 0;
+
+    .main-title {
+        color: white;
+        width: 60%;
+        margin-left: 50px;
+    }
+}

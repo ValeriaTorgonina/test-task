@@ -75,7 +75,7 @@
         <main class="main">
             <div class="container">
                 <section class="intro">
-                    <h1 class="main-title">крупный заголовок – в задании проверки ваших навыков.</h1>
+                    <h1 class="main-title"><b>крупный заголовок</b><br> – в задании проверки ваших навыков.</h1>
                 </section>
                 <section class="main__article">
                     <h2 class="title">Заголовок блока</h2>
@@ -96,67 +96,57 @@
                     </p>
                 </section>
                 <div class="main__cards-inner">
-                    <div class="swiper-wrapper">
-                        <section class="card swiper-slide">
-                            <h3 class="card__title">01</h3>
-                            <p class="card__text">
-                                Это текст – «рыба», часто используемый в печати и web-дизайне. 
-                                Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
-                                с начала XVI века.
-                            </p>
-                            <span class="card__decor"></span>
-                        </section>
-                        <section class="card swiper-slide">
-                            <h3 class="card__title">02</h3>
-                            <p class="card__text">
-                                Это текст – «рыба», часто используемый в печати и web-дизайне. 
-                                Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
-                                с начала XVI века.
-                            </p>
-                            <span class="card__decor"></span>
-                        </section>
-                        <section class="card swiper-slide">
-                            <h3 class="card__title">03</h3>
-                            <p class="card__text">
-                                Это текст – «рыба», часто используемый в печати и web-дизайне. 
-                                Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
-                                с начала XVI века.
-                            </p>
-                            <span class="card__decor"></span>
-                        </section>
-                    </div>
+                    <section class="card">
+                        <h3 class="card__title">01</h3>
+                        <p class="card__text">
+                            Это текст – «рыба», часто используемый в печати и web-дизайне. 
+                            Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
+                            с начала XVI века.
+                        </p>
+                        <span class="card__decor"></span>
+                    </section>
+                    <section class="card">
+                        <h3 class="card__title">02</h3>
+                        <p class="card__text">
+                            Это текст – «рыба», часто используемый в печати и web-дизайне. 
+                            Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
+                            с начала XVI века.
+                        </p>
+                        <span class="card__decor"></span>
+                    </section>
+                    <section class="card">
+                        <h3 class="card__title">03</h3>
+                        <p class="card__text">
+                            Это текст – «рыба», часто используемый в печати и web-дизайне. 
+                            Lorem Ipsum является стандартной «рыбой» для текстов на латинице 
+                            с начала XVI века.
+                        </p>
+                        <span class="card__decor"></span>
+                    </section>
                 </div>
                 <section class="clients">
                     <header class="clients__header">
                         <h2 class="title">Наши клиенты</h2>
                         <a href="#" class="link">Все клиенты</a>
-                        <button class="swiper-button-prev" id="clients-prev"></button>
-                        <button class="swiper-button-next" id="clients-next"></button>
+                        <div class="clients__btn-container">
+                            <button class="swiper-button-prev" id="clients-prev"></button>
+                            <button class="swiper-button-next" id="clients-next"></button>
+                        </div>
                     </header>
-                    <div class="swiper-wrapper">
-                        <div class="clients__card swiper-slide">
-                            <picture class="clients__card-image">
-                                <source class="lazyload" type="image/webp" data-srcset="assets/img/sportmaster.webp">
-                                <img class="lazyload" alt="спортмастер" src="assets/img/stub-img.jpg" data-src="assets/img/sportmaster.jpg" height="100%" width="100%">
-                            </picture>
-                        </div>
-                        <div class="clients__card swiper-slide">
-                            <picture class="clients__card-image">
-                                <source class="lazyload" type="image/webp" data-srcset="assets/img/pyaterochka.webp">
-                                <img class="lazyload" alt="пятерочка" src="assets/img/stub-img.jpg" data-src="assets/img/pyaterochka.jpg" height="100%" width="100%">
-                            </picture>
-                        </div>
-                        <div class="clients__card swiper-slide">
-                            <picture class="clients__card-image">
-                                <source class="lazyload" type="image/webp" data-srcset="assets/img/dixie.webp">
-                                <img class="lazyload" alt="дикси" src="assets/img/stub-img.jpg" data-src="assets/img/dixie.jpg" height="100%" width="100%">
-                            </picture>
-                        </div>
-                        <div class="clients__card swiper-slide">
-                            <picture class="clients__card-image">
-                                <source class="lazyload" type="image/webp" data-srcset="assets/img/carousel.webp">
-                                <img class="lazyload" alt="карусель" src="assets/img/stub-img.jpg" data-src="assets/img/carousel.jpg" height="100%" width="100%">
-                            </picture>
+                    <div class="clients__slider">
+                        <div class="swiper-wrapper">
+                            <div class="clients__card swiper-slide">
+                                <img class="lazyload clients__card-image" alt="спортмастер" src="assets/img/stub-img.jpg" data-src="assets/img/sportmaster.jpg" height="100%" width="100%">
+                            </div>
+                            <div class="clients__card swiper-slide">
+                                <img class="lazyload clients__card-image" alt="пятерочка" src="assets/img/stub-img.jpg" data-src="assets/img/pyaterochka.jpg" height="100%" width="100%">
+                            </div>
+                            <div class="clients__card swiper-slide">
+                                <img class="lazyload clients__card-image" alt="дикси" src="assets/img/stub-img.jpg" data-src="assets/img/dixie.jpg" height="100%" width="100%">
+                            </div>
+                            <div class="clients__card swiper-slide">
+                                <img class="lazyload clients__card-image" alt="карусель" src="assets/img/stub-img.jpg" data-src="assets/img/carousel.jpg" height="100%" width="100%">
+                            </div>
                         </div>
                     </div>
                 </section>

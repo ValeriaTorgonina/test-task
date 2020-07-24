@@ -25,3 +25,43 @@
 .menu-button {
     display: none;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: relative!important;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 44px;
+    height: 44px;
+    border: 1px solid $red;
+    border-radius: 50%;
+    margin: 0;
+    margin-left: 15px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 10px;
+        background: $red;
+        font-size: 0;
+        left: 42%;
+        transform: rotate(45deg) translate(-50%, -22%);
+    }
+    &:after {
+        transform: rotate(-45deg) translate(-50%, 22%);
+    }
+}
+
+.swiper-button-next {
+    &:before,
+    &:after {
+        left: 58%;
+        transform: rotate(45deg) translate(-50%, 48%);
+    }
+    &:after {
+        transform: rotate(-45deg) translate(-50%, -48%);
+    }
+}

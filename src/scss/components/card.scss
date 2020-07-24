@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+    width: 32%;
+    min-height: 200px;
+    background: $beige;
+    padding: 15px 20px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(45deg, $beige 50%, white 50%);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 20px;
+        bottom: 20px;
+        border-right: 4px solid $red;
+        border-bottom: 4px solid $red;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 42px;
+        color: $red;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        text-align: justify;
+    }
+}
